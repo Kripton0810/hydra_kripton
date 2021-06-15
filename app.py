@@ -3,6 +3,11 @@ import jsonify
 import MLmodel as model
 app = Flask(__name__)
 
+@app.route("/")
+def hi():
+    return "Hello world"
+
+
 @app.route("/model/")
 
 def hello():
